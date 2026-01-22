@@ -1,19 +1,17 @@
-import AboutIntro from "../../layouts/about/AboutIntro"
-import CTA from "../../layouts/home/CallToAction"
-import CoreValues from "../../layouts/about/CoreValues"
-import JourneyTimeline from "../../layouts/about/JourneyTimeline"
-import Vision from "../../layouts/about/Vision"
+import AboutIntro from "./components/AboutIntro";
+import CTA from "../home/CallToAction";
+import CoreValues from "./components/CoreValues";
+import JourneyTimeline from "./components/JourneyTimeline";
+import Vision from "./components/Vision";
 
-const AboutPage = () => {
+export default function AboutPage() {
   return (
-    <div>
+    <div className="flex flex-col">
       <AboutIntro />
       <JourneyTimeline />
       <CoreValues />
       <Vision />
       <CTA />
-    </div>)
-
+    </div>
+  );
 }
-
-export default AboutPage

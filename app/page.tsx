@@ -1,11 +1,11 @@
 import Navbar from "../components/Navbar";
-import AboutSnippet from "../layouts/home/AboutSnippet";
-import CTA from "../layouts/home/CallToAction";
-import FeaturesSnippet from "../layouts/home/Features";
+import AboutSnippet from "./home/AboutSnippet";
+import CTA from "./home/CallToAction";
+import FeaturesSnippet from "./home/Features";
 
-import Hero from "../layouts/home/Hero";
-import ProjectsGrid from "../layouts/projects/ProjectsGrid";
-import TechStack from "../layouts/home/TechStack";
+import Hero from "./home/Hero";
+import ProjectsGrid from "./projects/components/ProjectsGrid";
+import TechStack from "./home/TechStack";
 
 import { projectsData } from "../data/projectsData";
 

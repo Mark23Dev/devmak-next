@@ -14,6 +14,7 @@ export default function Navbar() {
     { label: "Projects", href: "/projects" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
+    { label: "CaseStudy", href: "/casestudy" },
   ];
 
   return (
@@ -39,7 +40,7 @@ export default function Navbar() {
             height={42}
             className="hover:opacity-80 transition"
           />
-          <span className="text-2xl font-extrabold tracking-wide text-cyan-400">
+          <span className="text-2xl font-extrabold tracking-wide text-[var(--color-primary)]">
             DevMak
           </span>
         </Link>
@@ -50,7 +51,7 @@ export default function Navbar() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-cyan-400 hover:text-purple-400 transition"
+                className="text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition"
               >
                 {link.label}
               </Link>
@@ -61,7 +62,7 @@ export default function Navbar() {
         {/* Mobile Toggle */}
         <button
           onClick={() => setOpen(!open)}
-          className="md:hidden text-cyan-400"
+          className="md:hidden text-[var(--color-primary)]"
           aria-label="Toggle menu"
         >
           {open ? <X size={28} /> : <Menu size={28} />}
@@ -70,14 +71,14 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden border-t border-white/10">
-          <ul className="flex flex-col px-6 py-6 space-y-6 bg-black/90">
+        <div className="md:hidden border-t border-[var(--color-border)]">
+          <ul className="flex flex-col px-6 py-6 space-y-6 bg-[var(--color-background)/90]">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="block text-lg font-medium text-cyan-400 hover:text-purple-400 transition"
+                  className="block text-lg font-medium text-[var(--color-primary)] hover:text-[var(--color-secondary)] transition"
                 >
                   {link.label}
                 </Link>

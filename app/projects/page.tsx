@@ -1,15 +1,14 @@
-import CTA from "../../layouts/home/CallToAction"
-import ProjectsGrid from "../../layouts/projects/ProjectsGrid"
-import { projectsData } from "../../data/projectsData"
-import ProjectsIntro from "../../layouts/projects/ProjectIntro"
+import ProjectsIntro from "./components/ProjectIntro";
+import ProjectsGrid from "./components/ProjectsGrid";
+import { projectsData } from "../../data/projectsData";
+import CTA from "../home/CallToAction";
 
-const ProjectsPage = () => {
+export default function ProjectsPage() {
   return (
-    <div>
+    <div className="flex flex-col">
       <ProjectsIntro />
       <ProjectsGrid title="All Projects" projects={projectsData} showCTA={false} />
       <CTA />
-    </div>)
+    </div>
+  );
 }
-
-export default ProjectsPage
