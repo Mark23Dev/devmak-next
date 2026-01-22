@@ -22,16 +22,16 @@ export const metadata: Metadata = {
   creator: "DevMak",
   publisher: "DevMak",
   // Base URL of your site
-  metadataBase: new URL("https://yourdomain.com"),
+  metadataBase: new URL("https://devmakspace.dev"),
   openGraph: {
     title: "DevMak Portfolio",
     description: "Explore DevMak's projects, case studies, and blog posts focused on scalable systems and Go backend development.",
-    url: "https://yourdomain.com",
+    url: "https://devmakspace.dev",
     siteName: "DevMak Portfolio",
     type: "website",
     images: [
       {
-        url: "https://yourdomain.com/devmak-og-image.png",
+        url: "https://devmakspace.dev.com/devmak-photo.png",
         width: 1200,
         height: 630,
         alt: "DevMak Portfolio Preview",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DevMak Portfolio",
     description: "Explore DevMak's projects, case studies, and blogs on scalable systems and Go backends.",
-    images: ["https://yourdomain.com/devmak-og-image.png"],
+    images: ["https://yourdomain.com/devmak-photo.png"],
     creator: "@devmak",
   },
   icons: {
