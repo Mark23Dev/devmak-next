@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://devmakspace.dev.com/devmak-photo.png",
+        url: "/devmak-photo.png",
         width: 1200,
         height: 630,
         alt: "DevMak Portfolio Preview",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "DevMak Portfolio",
     description: "Explore DevMak's projects, case studies, and blogs on scalable systems and Go backends.",
-    images: ["https://yourdomain.com/devmak-photo.png"],
+    images: ["/devmak-photo.png"],
     creator: "@devmak",
   },
   icons: {
