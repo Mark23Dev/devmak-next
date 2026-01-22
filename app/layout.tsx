@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   description: "Created by devmak for projects display",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{
