@@ -15,9 +15,43 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "devmak portfolio",
-  description: "Created by devmak for projects display",
+  title: "DevMak Portfolio",
+  description: "DevMak's portfolio showcasing Go backends, scalable systems, and real-world projects.",
+  keywords: ["DevMak", "Go", "Backend", "Scalable Systems", "Portfolio", "Projects", "Web Development"],
+  authors: [{ name: "DevMak" }],
+  creator: "DevMak",
+  publisher: "DevMak",
+  // Base URL of your site
+  metadataBase: new URL("https://yourdomain.com"),
+  openGraph: {
+    title: "DevMak Portfolio",
+    description: "Explore DevMak's projects, case studies, and blog posts focused on scalable systems and Go backend development.",
+    url: "https://yourdomain.com",
+    siteName: "DevMak Portfolio",
+    type: "website",
+    images: [
+      {
+        url: "https://yourdomain.com/devmak-og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "DevMak Portfolio Preview",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "DevMak Portfolio",
+    description: "Explore DevMak's projects, case studies, and blogs on scalable systems and Go backends.",
+    images: ["https://yourdomain.com/devmak-og-image.png"],
+    creator: "@devmak",
+  },
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+  },
 };
+
 
 
 export default function RootLayout({
